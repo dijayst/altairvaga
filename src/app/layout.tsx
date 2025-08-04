@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Spinninglogo from "@/components/Spinninglogo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      <Navbar/>
+        
+
+        <div className="flex mt-17 px-15 min-h-screen pt-40">
+          {/* Main content */}
+          <div className="flex w-[82%] items-center justify-center">
+            {children}
+          </div>
+
+          {/* Spinning Logo appears on every page */}
+          <div className="flex w-[18%] max-h-[12rem] items-end justify-end">
+            <Spinninglogo />
+          </div>
+        </div>
       </body>
     </html>
   );
