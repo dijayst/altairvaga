@@ -52,7 +52,7 @@ const Navbar = () => {
                 href="/"
                 className=" text-black px-6 py-2 text-lg uppercase rounded hover:underline underline whitespace-nowrap hover:decoration-blue-500  font-semibold "
               >
-               let’s grow
+               let’s Grow
 
 
               </Link>
@@ -90,6 +90,7 @@ const Navbar = () => {
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact us</Link></li>
             <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/blog">let’s Grow</Link></li>
             
           </ul>
         )}

@@ -5,14 +5,14 @@ import Ninthsection from '../Ninthsection/Ninthsection'
 export default function Footer() {
   return (
 
-      <div className='bg-[#141336]  px-15'>
+      <div className='bg-[#141336]  md:px-15 px-5'>
         <Ninthsection />
       <div className="border w-full h-0.5 bg-white md:my-30 "></div>
       <footer className=" text-white py-16 ">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
               {/* Logo & Contact */}
               <div>
-                  <h2 className="text-3xl font-serif mb-6">goodbrand</h2>
+                  <h2 className="text-3xl font-montserrat mb-6">goodbrand</h2>
                   <p className="mb-2">+01 234 567 77</p>
                   <p className="mb-2 underline">grow@goodbrand.io</p>
                   <p>3711 South Mopac Expressway, Austin TX 78746</p>

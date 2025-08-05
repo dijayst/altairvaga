@@ -66,9 +66,9 @@ export default function Seventhsection() {
 
 <div className="flex flex-col gap-10 whitespace-nowrap">
 
-      <div className="flex  md:flex-row flex-col">
+      <div className="flex  md:flex-row flex-col md:gap-0 gap-10">
   {/* Sticky Title */}
-  <div className="w-4/6 sticky top-24 self-start">
+  <div className="w-4/6 md:sticky md:top-24 self-start">
     <h2 className="md:text-6xl text-4xl font-medium">Branding & Design</h2>
   </div>
 
@@ -103,9 +103,9 @@ export default function Seventhsection() {
 
 
 
-<div className="flex  md:flex-row flex-col">
+<div className="flex  md:flex-row flex-col md:gap-0 gap-10">
   {/* Sticky Title */}
-  <h2 className="md:text-6xl text-4xl font-medium w-4/6 sticky top-32 self-start">
+  <h2 className="md:text-6xl text-4xl font-medium w-4/6 md:sticky md:top-32 self-start">
     Marketing Ops
   </h2>
 
@@ -127,7 +127,7 @@ export default function Seventhsection() {
       </Link>
     </div>
 
-    <div className="border h-0.2 bg-white"></div>
+    <div className="border h-0.2 bg-white "></div>
   </div>
 </div>
 
@@ -141,8 +141,8 @@ export default function Seventhsection() {
 
 
 
-<div className="flex pb-30 min-h-[150vh]  md:flex-row flex-col">
-  <div className="w-4/6 sticky top-20 self-start">
+<div className="flex pb-30 min-h-[150vh]  md:flex-row flex-col md:gap-0 gap-10">
+  <div className="w-4/6 md:sticky md:top-20 self-start">
     <h2 className="md:text-6xl text-4xl font-medium">Strategy & Growth</h2>
   </div>
 

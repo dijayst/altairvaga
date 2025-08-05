@@ -17,10 +17,10 @@ export default function Eighthsection() {
           accomplish those goals.
         </p>
 
-        <div className="flex items-center justify-center gap-4 mt-6">
+        <div className="flex md:flex-row flex-col items-center justify-center gap-4 mt-6">
           <Link
             href="/about"
-            className="flex items-center justify-center bg-green-600 text-white hover:bg-green-700 px-6 py-3 rounded-full text-lg font-semibold transition-all duration-200"
+            className="flex items-center justify-center  bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-full text-lg font-semibold transition-all duration-200"
           >
             <FiArrowRight className="mr-2" />
             Learn More

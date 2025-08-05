@@ -12,7 +12,7 @@ export default function Service() {
         threshold: 0.2,     // adjust when it should animate
       });
   return (
-    <div className="px-15 bg-[#f1f1f1]  ">
+    <div className="md:px-15 px-5 bg-[#f1f1f1]  ">
       <p className=' max-w-130 text-black text-2xl ml-80'>Whether you're just building out your marketing or looking to explore new strategies, we have the toolkits and experience to help you grow your business.</p>
      <div className="border w-full h-0.5 bg-black my-30 "></div>
    

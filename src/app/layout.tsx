@@ -48,7 +48,7 @@ contentTex2='transform their impact.';
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${geistMono.variable} `}
       >
       <Navbar/>
 

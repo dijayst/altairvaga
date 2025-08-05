@@ -41,9 +41,9 @@ export default function Home() {
   return (
     <div className=" bg-[#f1f1f1] flex flex-col ">
     
-   <div className="px-15">  <Secondsection/></div>
+   <div className="md:px-15 px-5">  <Secondsection/></div>
 
-   <div className=" px-15 "><Thirdsection/></div>
+   <div className=" md:px-15 px-5 "><Thirdsection/></div>
   
    <div className="text-5xl sm:text-6xl font-light text-center leading-tight text-gray-900 h-screen py-50">
       {lines.map((line, i) => (
@@ -62,19 +62,19 @@ export default function Home() {
     </div>
 
     
-  <div className="px-15 "> <Fourthsection/></div>
-  <div className="px-15">
+  <div className="md:px-15 px-5 "> <Fourthsection/></div>
+  <div className="md:px-15 px-5">
    <div className="border w-full h-0.5 bg-black my-30 "></div></div>
-    <div className="mb-20 px-15">
+    <div className="mb-20 md:px-15 px-5">
       <p    className="md:text-6xl text-4xl flex flex-col justify-center text-center font-medium">
         <span>Our Marketing Services are purpose-built</span><span> around your <em>funnel</em>, to help you create </span><span>sustainable, predictable <em>growth.</em></span>
       </p>
      
     </div>
-    <div className="px-15"><Fifthsection/></div>
-    <div className="mt-20 px-15">
+    <div className="md:px-15 px-5"><Fifthsection/></div>
+    <div className="mt-20 md:px-15 px-5">
     <Sixthsection/></div>
-    <div className="bg-[#19183a] px-15">
+    <div className="bg-[#19183a] md:px-15 px-5">
     <Seventhsection/></div>
 
 
@@ -96,7 +96,7 @@ export default function Home() {
             </section>
      
      <Testimonials/>
-     <div className="px-15">
+     <div className="md:px-15 px-5">
      <Eighthsection/></div>
      
     </div>
