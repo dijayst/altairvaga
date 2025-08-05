@@ -65,7 +65,6 @@ contentTex2='transform their impact.';
  )}
            {children}
          
-          {/* Spinning Logo appears on every page */}
           
 
          
