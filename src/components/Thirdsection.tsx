@@ -6,7 +6,7 @@ import { EmblaCarousel } from './EmblaCarousel'
 export default function Thirdsection() {
   return (
   
-      <div className=" shadow-sm flex flex-col py-[2rem] overflow-x-hidden px-20 justify-center items-center">
+      <div className=" shadow-sm flex flex-col py-[2rem] overflow-x-hidden px-20 justify-center items-center ">
           <EmblaCarousel
               list={[
                   <Image
