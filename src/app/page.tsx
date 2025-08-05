@@ -12,7 +12,6 @@ import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Eighthsection from "@/components/Eightsection/Eighthsection";
-import Ninthsection from "@/components/Ninthsection/Ninthsection";
 
 
 const textVariants: Variants = {
@@ -67,7 +66,7 @@ export default function Home() {
   <div className="px-15">
    <div className="border w-full h-0.5 bg-black my-30 "></div></div>
     <div className="mb-20 px-15">
-      <p    className="text-6xl flex flex-col justify-center text-center font-medium">
+      <p    className="md:text-6xl text-4xl flex flex-col justify-center text-center font-medium">
         <span>Our Marketing Services are purpose-built</span><span> around your <em>funnel</em>, to help you create </span><span>sustainable, predictable <em>growth.</em></span>
       </p>
      

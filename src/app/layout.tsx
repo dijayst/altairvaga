@@ -53,7 +53,7 @@ contentTex2='transform their impact.';
       <Navbar/>
 
        {showLogoAndContent && (
-        <div className="flex flex-col-reverse lg:flex-row px-4 lg:px-15 min-h-screen pt-20 lg:pt-40 bg-[#f1f1f1]">
+        <div className="flex flex-col-reverse lg:flex-row px-4 lg:px-15 md:min-h-screen pt-20 lg:pt-40 bg-[#f1f1f1]">
               <div className="flex w-full lg:w-[82%] items-center justify-center">
                 <Content text={contentText1} text2={contentTex2} text3={contentTex3} />
               </div>

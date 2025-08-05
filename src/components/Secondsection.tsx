@@ -5,21 +5,14 @@ import { FiArrowRight } from 'react-icons/fi'
 export default function Secondsection() {
   return (
     
-       <><div className='flex flex-col float-right py-20 px-40 '>
-      <div className='flex flex-col text-right  text-2xl'>
+       <><div className='flex flex-col md:float-right justify-center items-center py-20 md:px-40 px-0 '>
+      <div className='flex flex-col md:text-right px-0 md:px-15 text-2xl'>
         <span>We are Goodbrand, a full-service marketing agency</span>
         <span> based in Austin. We work with believers & big</span>
         <span> dreamers to help them achieve their vision.</span>
         </div>
 
 
-<div className="flex justify-center px-4">
-  <div className="flex flex-col text-center text-2xl max-w-3xl">
-    <span>We are Goodbrand, a full-service marketing agency</span>
-    <span>based in Austin. We work with believers & big</span>
-    <span>dreamers to help them achieve their vision.</span>
-  </div>
-</div>
 
 
       <div className="flex justify-center items-center gap-4 mt-4">

@@ -53,7 +53,7 @@ export default function Seventhsection() {
           {[
             "Whether you're just building out your marketing or looking to",
             "explore new strategies, we have the toolkits and experience to help",
-            "you grow your business.",
+            "you grow your business."
           ].map((text, i) => (
             <motion.span key={i} variants={fadeUp} custom={i + 2}>
               {text}
@@ -69,12 +69,12 @@ export default function Seventhsection() {
       <div className="flex  md:flex-row flex-col">
   {/* Sticky Title */}
   <div className="w-4/6 sticky top-24 self-start">
-    <h2 className="text-6xl font-medium">Branding & Design</h2>
+    <h2 className="md:text-6xl text-4xl font-medium">Branding & Design</h2>
   </div>
 
   {/* Scrollable Section */}
   <div className="flex-col w-2/6 gap-10 flex">
-    <div className="flex gap-25  md:flex-row flex-col">
+    <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
       <div className="flex flex-col gap-15 text-xl">
         <p>Branding</p>
         <p>Creative</p>
@@ -105,13 +105,13 @@ export default function Seventhsection() {
 
 <div className="flex  md:flex-row flex-col">
   {/* Sticky Title */}
-  <h2 className="text-6xl font-medium w-4/6 sticky top-32 self-start">
+  <h2 className="md:text-6xl text-4xl font-medium w-4/6 sticky top-32 self-start">
     Marketing Ops
   </h2>
 
   {/* Scrollable Right Side */}
   <div className="flex-col w-2/6 gap-10 flex">
-    <div className="flex gap-25  md:flex-row flex-col">
+    <div className="flex md:gap-25 gap-5  md:flex-row flex-col">
       <div className="flex flex-col gap-15 text-xl">
         <p>Marketing Automation</p>
         <p>Database Management</p>
@@ -143,11 +143,11 @@ export default function Seventhsection() {
 
 <div className="flex pb-30 min-h-[150vh]  md:flex-row flex-col">
   <div className="w-4/6 sticky top-20 self-start">
-    <h2 className="text-6xl font-medium">Strategy & Growth</h2>
+    <h2 className="md:text-6xl text-4xl font-medium">Strategy & Growth</h2>
   </div>
 
-  <div className="flex-col w-2/6 gap-10 flex">
-    <div className="flex gap-25 md:flex-row flex-col">
+  <div className="flex-col w-2/6 md:gap-10 flex">
+    <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
       <div className="flex flex-col gap-15 text-xl">
         <p>Strategy Development</p>
         <p>Strategy Implementation</p>

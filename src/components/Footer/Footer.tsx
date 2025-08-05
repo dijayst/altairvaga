@@ -7,7 +7,7 @@ export default function Footer() {
 
       <div className='bg-[#141336]  px-15'>
         <Ninthsection />
-      <div className="border w-full h-0.5 bg-white my-30"></div>
+      <div className="border w-full h-0.5 bg-white md:my-30 "></div>
       <footer className=" text-white py-16 ">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
               {/* Logo & Contact */}
