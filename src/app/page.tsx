@@ -28,8 +28,8 @@ const textVariants: Variants = {
 };
 export default function Home() {
     const { ref, inView } = useInView({
-    triggerOnce: true, // animates only once
-    threshold: 0.2,     // adjust when it should animate
+    triggerOnce: true, 
+    threshold: 0.2,     
   });
 
 

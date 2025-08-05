@@ -12,7 +12,7 @@ export default function Ninthsection() {
                   <div className="flex items-center justify-center gap-4 mt-6">
   <Link
     href="/about"
-    className="flex items-center justify-center bg-green-600 text-white hover:bg-green-700 px-10 py-3 rounded-full text-lg font-semibold transition-all duration-200 w-fit"
+    className="flex items-center justify-center bg-blue-600 text-white hover:bg-green-700 px-10 py-3 rounded-full text-lg font-semibold transition-all duration-200 w-fit"
   >
     <FiArrowRight className="mr-2" />
   </Link>

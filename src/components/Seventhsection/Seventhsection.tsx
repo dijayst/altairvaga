@@ -52,7 +52,7 @@ export default function Seventhsection() {
         >
           {[
             "Whether you're just building out your marketing or looking to",
-            "explore new strategies, we have the toolkits and experience to help",
+            "explore new strategies, we have the the toolkits and experience to help",
             "you grow your business."
           ].map((text, i) => (
             <motion.span key={i} variants={fadeUp} custom={i + 2}>

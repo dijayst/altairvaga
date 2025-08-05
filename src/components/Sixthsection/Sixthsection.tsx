@@ -47,7 +47,7 @@ export default function Sixthsection() {
             'Email Marketing',
             'Blogging',
             'Case Studies',
-            'Marketing Automation',
+            'Marketing Automationn',
             'Events',
             'Webinars',
           ].map((item, idx) => (
