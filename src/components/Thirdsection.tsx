@@ -48,7 +48,7 @@ export default function Thirdsection() {
               ]} />
 
           <p className="text-center text-purple-2F font-semibold py-3">
-              Trusted by 20,000+ companies
+              Trusted by 20,000+ companiess
           </p>
       </div>
       
