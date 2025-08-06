@@ -32,7 +32,8 @@ export default function Seventhsection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col text-5xl md:text-6xl text-justify px-0 md:px-10 font-medium "
+             className="flex flex-col text-5xl md:text-6xl text-justify px-0 md:px-10 font-medium leading-tight"
+
         >
           {[
             "Conception to scale,",
@@ -66,22 +67,60 @@ export default function Seventhsection() {
 
 <div className="flex flex-col gap-10 whitespace-nowrap">
 
-      <div className="flex  md:flex-row flex-col md:gap-0 gap-10">
-  {/* Sticky Title */}
-  <div className="w-4/6 md:sticky md:top-24 self-start">
+
+
+
+
+<div className="flex  md:flex-row flex-col md:gap-0 gap-10">
+  <div className="w-4/6 md:sticky md:top-20 self-start">
     <h2 className="md:text-6xl text-4xl font-medium">Branding & Design</h2>
   </div>
 
-  {/* Scrollable Section */}
-  <div className="flex-col w-2/6 gap-10 flex">
+  <div className="flex-col w-2/6 md:gap-10 flex">
     <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
-      <div className="flex flex-col gap-15 text-xl">
+       <div className="flex flex-col gap-15 text-xl">
         <p>Branding</p>
         <p>Creative</p>
         <p>UI/UX Design</p>
         <p>Video</p>
         <p>Web Design</p>
         <p>Photography</p>
+      </div>
+
+      <Link
+        href="/about"
+        className=" transition-all duration-200 h-12 w-40 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
+      >
+        <FiArrowRight color="white" size={30} className=" group-hover:inline-block transition-all duration-200" />
+      </Link>
+    </div>
+
+    <div className="border h-0.2 bg-white "></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div className="flex flex-col gap-10 whitespace-nowrap">
+
+      <div className="flex  md:flex-row flex-col md:gap-0 gap-10">
+  {/* Sticky Title */}
+  <div className="w-4/6 md:sticky md:top-24 self-start">
+    <h2 className="md:text-6xl text-4xl font-medium"> Marketing Ops</h2>
+  </div>
+
+  {/* Scrollable Section */}
+  <div className="flex-col w-2/6 gap-10 flex">
+    <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
+      <div className="flex flex-col gap-15 text-xl">
+        <p>Marketing Automation</p>
+        <p>Database Management</p>
+        <p>MarTech Consulting</p>
+        <p>WordPress</p>
       </div>
 
       <Link
@@ -102,46 +141,7 @@ export default function Seventhsection() {
 
 
 
-
-<div className="flex  md:flex-row flex-col md:gap-0 gap-10">
-  {/* Sticky Title */}
-  <h2 className="md:text-6xl text-4xl font-medium w-4/6 md:sticky md:top-32 self-start">
-    Marketing Ops
-  </h2>
-
-  {/* Scrollable Right Side */}
-  <div className="flex-col w-2/6 gap-10 flex">
-    <div className="flex md:gap-25 gap-5  md:flex-row flex-col">
-      <div className="flex flex-col gap-15 text-xl">
-        <p>Marketing Automation</p>
-        <p>Database Management</p>
-        <p>MarTech Consulting</p>
-        <p>WordPress</p>
-      </div>
-
-     <Link
-        href="/about"
-        className=" transition-all duration-200 h-12 w-40 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
-      >
-        <FiArrowRight color="white" size={30} className=" group-hover:inline-block transition-all duration-200" />
-      </Link>
-    </div>
-
-    <div className="border h-0.2 bg-white "></div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div className="flex pb-30 min-h-[150vh]  md:flex-row flex-col md:gap-0 gap-10">
+<div className="flex pb-30   md:flex-row flex-col md:gap-0 gap-10">
   <div className="w-4/6 md:sticky md:top-20 self-start">
     <h2 className="md:text-6xl text-4xl font-medium">Strategy & Growth</h2>
   </div>
@@ -185,7 +185,7 @@ export default function Seventhsection() {
 
 
 
-
+</div>
 
     </div>
   );

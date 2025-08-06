@@ -38,3 +38,44 @@ export const whatwedo = [
     text: 'Keeping your customers happy goes beyond just your product. Engage your customers through various other channels.',
   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+export const cardsCol1 = [
+  {
+    title: 'GRAPHIC DESIGNER',
+    desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
+  },
+  {
+    title: 'WEBSITE DEVELOPER',
+    desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
+  },
+  {
+    title: 'ILLUSTRATOR',
+    desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
+  }
+];
+
+export const cardsCol2 = [
+  {
+    title: 'MARKETING MANAGER',
+    desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
+  },
+  {
+    title: 'ABM SPECIALIST',
+    desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
+  },
+  {
+    title: 'SOCIAL MEDIA MANAGER',
+    desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
+  }
+];

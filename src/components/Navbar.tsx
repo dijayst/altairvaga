@@ -35,28 +35,29 @@ const Navbar = () => {
               <p className="font-semibold font-inter text-3xl text-[#3e80e4]">Altairvega</p>
             </Link>
           </div>
-<div className="flex w-1/3 items-center gap-2 justify-center ">
+<div className="flex w-1/3 items-center gap-2 justify-center   ">
           <ul className="hidden md:flex items-center space-x-6 text-[#163546] font-light">
-            <li><Link href="/service">Service</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact us</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/">Home</Link></li>
+            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/service">Service</Link></li>
+            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/about">About</Link></li>
+            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/contact">Contact us</Link></li>
+            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/blog">Blog</Link></li>
           </ul>
           </div>
  
              
            
 
-  <div className="w-1/3 text-right">
-              <Link
-                href="/"
-                className=" text-black px-6 py-2 text-lg uppercase rounded hover:underline underline whitespace-nowrap hover:decoration-blue-500  font-semibold "
-              >
-               let’s Grow
 
+            <div className="hidden md:block w-1/3 text-right">
+  <Link
+    href="/"
+    className="text-black px-6 py-2 text-lg uppercase rounded hover:underline underline whitespace-nowrap hover:decoration-blue-500 font-semibold"
+  >
+    let’s Grow
+  </Link>
+</div>
 
-              </Link>
-            </div>
            
 
 
@@ -86,6 +87,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <ul className="md:hidden flex flex-col space-y-4 px-6 pb-4 bg-white font-semibold">
+           <li><Link href="/">Home</Link></li>
            <li><Link href="/service">Service</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact us</Link></li>

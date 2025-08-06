@@ -6,7 +6,6 @@ import Fifthsection from "@/components/Fifthsection/Fifthsection";
 import Fourthsection from "@/components/Fourthsection/Fourthsection";
 import Secondsection from "@/components/Secondsection";
 import Seventhsection from "@/components/Seventhsection/Seventhsection";
-import Sixthsection from "@/components/Sixthsection/Sixthsection";
 import Thirdsection from "@/components/Thirdsection";
 import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -72,8 +71,9 @@ export default function Home() {
      
     </div>
     <div className="md:px-15 px-5"><Fifthsection/></div>
+    {/*
     <div className="mt-20 md:px-15 px-5">
-    <Sixthsection/></div>
+    <Sixthsection/></div>*/}
     <div className="bg-[#19183a] md:px-15 px-5">
     <Seventhsection/></div>
 

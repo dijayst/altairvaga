@@ -5,9 +5,10 @@ import { FiArrowRight } from 'react-icons/fi'
 export default function Secondsection() {
   return (
     
-       <><div className='flex flex-col md:float-right justify-center items-center py-20 md:px-40 px-0 '>
-      <div className='flex flex-col md:text-right px-0 md:px-15 text-2xl'>
-        <span>We are Goodbrand, aa full-service marketing agency</span>
+       <>
+       <div className='flex flex-col  justify-center items-center py-20 md:px-40 px-0 '>
+      <div className='flex flex-col  px-0 md:px-15 text-2xl'>
+        <span>We are Goodbrand, a full-service marketing agency</span>
         <span> based in Austin. We work with believers & big</span>
         <span> dreamers to help them achieve their vision.</span>
         </div>

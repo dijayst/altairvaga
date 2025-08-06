@@ -4,9 +4,12 @@ import { FiArrowRight } from 'react-icons/fi'
 
 export default function Eighthsection() {
   return (
-    <div>
-      <p className='flex flex-col md:text-6xl text-4xl font-medium text-justify'><span>Our approach is different </span><span>than other agencies.</span></p>
-   
+    <div >
+      <p className="flex flex-col items-center text-center md:text-6xl text-4xl font-medium">
+  <span>Our approach is different</span>
+  <span>than other agencies.</span>
+</p>
+
 
 <div className="py-20 flex items-center justify-center  px-4">
       <div className="flex flex-col items-center text-center md:max-w-[50%] w-full">
