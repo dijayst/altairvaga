@@ -42,7 +42,7 @@ export default function Home() {
     
    <div className="md:px-15 px-5">  <Secondsection/></div>
 
-   <div className=" md:px-15 px-5 "><Thirdsection/></div>
+   {/*<div className=" md:px-15 px-5 "><Thirdsection/></div>*/}
   
    <div className="text-5xl sm:text-6xl font-light text-center leading-tight text-gray-900 h-screen py-50">
       {lines.map((line, i) => (
