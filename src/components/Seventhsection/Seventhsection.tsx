@@ -6,6 +6,21 @@ import { FiArrowRight } from "react-icons/fi";
 
 
 const fadeUp: Variants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: (i: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: i * 0.3, // stagger each line
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  }),
+};
+
+
+
+const fadeUp1: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
@@ -32,12 +47,14 @@ export default function Seventhsection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-             className="flex flex-col text-5xl md:text-6xl text-justify px-0 md:px-10 font-medium leading-tight"
+             className="flex flex-col text-5xl md:text-6xl text-justify px-0 md:px-10 font-medium "
 
         >
           {[
-            "Conception to scale,",
-            "we cover the entire growth journey",
+             <>Conception to scale,</>,
+  <>
+    we cover the entire <span className="italic">growth journey</span>
+  </>,
           ].map((text, i) => (
             <motion.span key={i} variants={fadeUp} custom={i}>
               {text}
@@ -65,7 +82,7 @@ export default function Seventhsection() {
     </div>
 
 
-<div className="flex flex-col gap-10 whitespace-nowrap">
+<div className="flex flex-col gap-20 whitespace-nowrap">
 
 
 
@@ -77,8 +94,8 @@ export default function Seventhsection() {
   </div>
 
   <div className="flex-col w-2/6 md:gap-10 flex">
-    <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
-       <div className="flex flex-col gap-15 text-xl">
+    <div className="flex md:gap-10 gap-5 md:flex-row flex-col  ">
+       <div className="flex flex-col gap-15 text-xl w-3/4 ">
         <p>Branding</p>
         <p>Creative</p>
         <p>UI/UX Design</p>
@@ -89,7 +106,7 @@ export default function Seventhsection() {
 
       <Link
         href="/about"
-        className=" transition-all duration-200 h-12 w-40 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
+        className=" transition-all duration-200 w-1/4 h-12  mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
       >
         <FiArrowRight color="white" size={30} className=" group-hover:inline-block transition-all duration-200" />
       </Link>
@@ -105,18 +122,16 @@ export default function Seventhsection() {
 
 
 
-<div className="flex flex-col gap-10 whitespace-nowrap">
-
       <div className="flex  md:flex-row flex-col md:gap-0 gap-10">
   {/* Sticky Title */}
-  <div className="w-4/6 md:sticky md:top-24 self-start">
+  <div className="w-4/6 md:sticky md:top-24 self-start ">
     <h2 className="md:text-6xl text-4xl font-medium"> Marketing Ops</h2>
   </div>
 
   {/* Scrollable Section */}
-  <div className="flex-col w-2/6 gap-10 flex">
-    <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
-      <div className="flex flex-col gap-15 text-xl">
+  <div className="flex-col md:w-2/6  w-full gap-10  flex ">
+    <div className="flex md:gap-10 gap-5 md:flex-row flex-col ">
+      <div className="flex flex-col gap-15 text-xl md:w-3/4 w-full">
         <p>Marketing Automation</p>
         <p>Database Management</p>
         <p>MarTech Consulting</p>
@@ -125,12 +140,12 @@ export default function Seventhsection() {
 
       <Link
         href="/about"
-        className=" transition-all duration-200 h-12 w-40 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
+        className=" transition-all duration-200 h-12 w-1/4 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
       >
         <FiArrowRight color="white" size={30} className=" group-hover:inline-block transition-all duration-200" />
       </Link>
     </div>
-    <div className="border h-0.2 bg-white"></div>
+    <div className="border h-0.2 bg-white w-full"></div>
   </div>
 
 
@@ -147,8 +162,8 @@ export default function Seventhsection() {
   </div>
 
   <div className="flex-col w-2/6 md:gap-10 flex">
-    <div className="flex md:gap-25 gap-5 md:flex-row flex-col">
-      <div className="flex flex-col gap-15 text-xl">
+    <div className="flex md:gap-10 gap-5 md:flex-row flex-col">
+      <div className="flex flex-col gap-15 text-xl w-3/4">
         <p>Strategy Development</p>
         <p>Strategy Implementation</p>
         <p>Campaign Management</p>
@@ -158,7 +173,7 @@ export default function Seventhsection() {
 
       <Link
         href="/about"
-        className=" transition-all duration-200 h-12 w-40 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
+        className=" transition-all duration-200 h-12 w-1/4 mt-100 whitespace-nowrap bg-[#6100ff] text-white hover:bg-green-3a px-10 py-3 rounded-full text-lg md:text-md font-semibold justify-center items-center flex"
       >
         <FiArrowRight color="white" size={30} className=" group-hover:inline-block transition-all duration-200" />
       </Link>
@@ -168,8 +183,6 @@ export default function Seventhsection() {
   </div>
 </div>
 
-
-</div>
 
 
 

@@ -6,11 +6,10 @@ import Fifthsection from "@/components/Fifthsection/Fifthsection";
 import Fourthsection from "@/components/Fourthsection/Fourthsection";
 import Secondsection from "@/components/Secondsection";
 import Seventhsection from "@/components/Seventhsection/Seventhsection";
-import Thirdsection from "@/components/Thirdsection";
 import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import Testimonials from "@/components/Testimonials/Testimonials";
 import Eighthsection from "@/components/Eightsection/Eighthsection";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 
 const textVariants: Variants = {
@@ -44,7 +43,7 @@ export default function Home() {
 
    {/*<div className=" md:px-15 px-5 "><Thirdsection/></div>*/}
   
-   <div className="text-5xl sm:text-6xl font-light text-center leading-tight text-gray-900 h-screen py-50">
+   <div className="text-5xl sm:text-6xl font-light text-center leading-tight text-gray-900 h-screen md:py-50 py-20 ">
       {lines.map((line, i) => (
         <motion.span
           key={i}
@@ -62,11 +61,18 @@ export default function Home() {
 
     
   <div className="md:px-15 px-5 "> <Fourthsection/></div>
-  <div className="md:px-15 px-5">
-   <div className="border w-full h-0.5 bg-black my-30 "></div></div>
+
+   <div className="px-15">
+  <motion.div
+    className="border w-full h-0.5 border-black my-10 origin-left"
+    initial={{ scaleX: 0 }}
+    animate={{ scaleX: 1 }}
+    transition={{ duration: 1.2, ease: "easeOut" }}
+  />
+</div>
     <div className="mb-20 md:px-15 px-5">
-      <p    className="md:text-6xl text-4xl flex flex-col justify-center text-center font-medium">
-        <span>Our Marketing Services are purpose-built</span><span> around your <em>funnel</em>, to help you create </span><span>sustainable, predictable <em>growth.</em></span>
+      <p    className="md:text-6xl text-4xl flex flex-col justify-center text-center font-medium text-black">
+        <span>Our Marketing Services are purpose-built</span><span> around your <span className="italic">funnel</span>, to help you create </span><span>sustainable, predictable <span className="italic">growth.</span></span>
       </p>
      
     </div>

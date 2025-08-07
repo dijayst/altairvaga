@@ -1,44 +1,49 @@
+"use client";
+
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiArrowRight } from 'react-icons/fi'
+import { motion } from "framer-motion";
+import { lines } from './Fourthsection/data';
+import { useInView } from "react-intersection-observer";
+import Letsgrow from './Letgrowbtn/Letsgrow';
 
 export default function Secondsection() {
+
+  const [show, setShow] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Set to false if you want to animate every time it comes into view
+    threshold: 0.2,     // Adjust as needed
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setShow(true);
+    } else {
+      setShow(false); // comment this line if you only want it to animate once
+    }
+  }, [inView]);
   return (
     
        <>
        <div className='flex flex-col  justify-center items-center py-20 md:px-40 px-0 '>
-      <div className='flex flex-col  px-0 md:px-15 text-2xl'>
-        <span>We are Goodbrand, a full-service marketing agency</span>
-        <span> based in Austin. We work with believers & big</span>
-        <span> dreamers to help them achieve their vision.</span>
-        </div>
-
-
-
+     
+ <div ref={ref} className="flex flex-col px-0 md:px-15 text-2xl text-black overflow-hidden">
+      {lines.map((line, index) => (
+        <motion.span
+          key={index}
+          initial={{ opacity: 0, x: 50 }}
+          animate={show ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+          transition={{ delay: index * 0.4, duration: 0.6, ease: "easeOut" }}
+        >
+          {line}
+        </motion.span>
+      ))}
+    </div>
 
       <div className="flex justify-center items-center gap-4 mt-4">
-        <div className="group relative flex items-center justify-center px-20 py-3 rounded-full transition-all duration-300 bg-[#6100ff] hover:bg-gray-100 overflow-hidden w-30">
-          {/* Learn More text */}
-          <Link
-            href="/about"
-            className="text-white whitespace-nowrap transition-opacity duration-200 text-lg md:text-md font-semibold group-hover:opacity-0 z-10"
-          >
-            Learn More
-          </Link>
-
-          {/* Arrow icon */}
-          <Link
-            href="/about"
-            className="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0 z-10"
-          >
-            <FiArrowRight className="text-white text-xl" />
-          </Link>
-
-          {/* Background sliding effect (optional) */}
-          <span className="absolute inset-0 bg-[#6100ff] translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out z-0"></span>
-        </div>
-
-        <p className="hover:underline hover:decoration-blue-500">book a meeting</p>
+        <Letsgrow/>
+        <p className="hover:underline hover:decoration-blue-500 text-black uppercase font-medium">book a meeting</p>
       </div>
 
     </div>

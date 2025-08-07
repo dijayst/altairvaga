@@ -4,11 +4,19 @@ import { motion } from "framer-motion";
 
 export default function Spinninglogo() {
   return (
-    <div className="max-h-[12rem] flex items-center justify-center   ">
-       <div className="relative w-44 h-64 mx-auto ">
+    <>
+   
+
+<motion.div
+  initial={{ scale: 0.1, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 1.5, ease: "easeOut" }}
+>
+  <div className="max-h-[12rem] flex items-center justify-center">
+    <div className="relative w-44 h-64 mx-auto">
       {/* Rotating circular text */}
       <motion.svg
-        className="absolute inset-0 w-full h-full  "
+        className="absolute inset-0 w-full h-full"
         viewBox="0 0 300 300"
         animate={{ rotate: 360 }}
         transition={{
@@ -34,21 +42,20 @@ export default function Spinninglogo() {
           fontWeight="500"
           letterSpacing="3"
         >
-          <textPath
-            href="#circlePath"
-            startOffset="0"
-            textLength="628"
-          >
+          <textPath href="#circlePath" startOffset="0" textLength="628">
             * LEADING MARKETING, BRANDING & DESIGN AGENCY *
           </textPath>
         </text>
       </motion.svg>
 
       {/* Center logo */}
-      <div className="absolute inset-0 flex items-center justify-center  ">
+      <div className="absolute inset-0 flex items-center justify-center">
         <span className="text-5xl font-serif text-violet-600">gb</span>
       </div>
     </div>
-    </div>
+  </div>
+</motion.div>
+
+</>
   )
 }

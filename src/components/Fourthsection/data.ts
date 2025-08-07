@@ -79,3 +79,11 @@ export const cardsCol2 = [
     desc: 'Creative and passionate graphic designer specializing in licensed product design. Very fast worker and quick learner who thrives in a fast-paced environment.'
   }
 ];
+
+
+
+export const lines = [
+  "We are Goodbrand, a full-service marketing agency",
+  "based in Austin. We work with believers & big",
+  "dreamers to help them achieve their vision.",
+];

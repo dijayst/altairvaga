@@ -24,7 +24,7 @@ export default function Contactus() {
     
     
     
-    <div className="bg-[#f7f7f7] text-[#333] py-16 px-4">
+    <div className="bg-[#f1f1f1] text-[#333] py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <form className="space-y-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

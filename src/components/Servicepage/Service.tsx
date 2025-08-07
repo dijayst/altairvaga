@@ -1,25 +1,30 @@
 
 'use client';
-import { motion } from 'framer-motion'
-import React from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';
 import Fourthsection from '../Fourthsection/Fourthsection';
 import Eighthsection from '../Eightsection/Eighthsection';
-
+import Servicecontent from './Servicecontent';
+import Horixontalrule from './horixontalrule';
+import Letsgrow from '../Letgrowbtn/Letsgrow';
 export default function Service() {
-    
+ 
+
         const { ref, inView } = useInView({
         triggerOnce: true, // animates only once
         threshold: 0.2,     // adjust when it should animate
       });
   return (
-    <div className="md:px-15 px-5 bg-[#f1f1f1]  ">
-       <p className="max-w-130 text-black text-xl sm:text-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80">
- Whether you're
-         just building out your marketing or looking to explore new strategies, we have the toolkits and experience to help you grow your business.</p>
-      <div className="border w-full h-0.5 bg-black my-30 "></div>
+    <div className="md:px-15 px-5 bg-[#f1f1f1] py-20 ">
+      
+
+        <Servicecontent/>
+<br/>
+<br/>
+     <Horixontalrule/>
    
-   <div className="h-screen flex items-center justify-center  ">
+   <div className="py-20 flex items-center justify-center   ">
       <motion.p
         ref={ref}
         className="text-5xl flex flex-col justify-center text-center"
@@ -27,7 +32,7 @@ export default function Service() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <span className='whitespace-nowrap'>Drive higher conversions, growth, and retention.</span>
+        <span className='md:whitespace-nowrap text-[#19183a]'>Drive higher conversions, growth, and retention.</span>
         
       </motion.p>
     </div>
@@ -36,7 +41,7 @@ export default function Service() {
 
 
     <section className="bg-[#f1f1f1] py-16 px-6 md:px-20">
-  <div className="flex flex-col md:flex-row gap-12">
+  <div className="flex flex-col md:flex-row gap-20">
     
     {/* Left Heading */}
     <div className="md:w-1/2 md:sticky md:top-24 self-start">
@@ -52,34 +57,42 @@ export default function Service() {
     <div className="md:w-1/2 space-y-12">
       {/* Service Block 1 */}
       <div>
-        <h3 className="text-2xl font-bold text-[#0f0f2d] mb-2">Marketing Strategy</h3>
-        <p className="text-[#0f0f2d] text-lg">
+        <h3 className="text-4xl font-bold text-[#0f0f2d] mb-2">Marketing Strategy</h3>
+        <p className="text-[#0f0f2d] text-xl">
           Whether you're just building out your marketing or looking to explore new strategies, we have the toolkits and experience to help you grow your business.
         </p>
-        <hr className="border-t-2 border-[#0f0f2d] mt-4" />
+         <Horixontalrule/>
       </div>
 
       {/* Service Block 2 */}
       <div>
-        <h3 className="text-2xl font-bold text-[#0f0f2d] mb-2">Branding</h3>
-        <p className="text-[#0f0f2d] text-lg">
+        <h3 className="text-4xl font-bold text-[#0f0f2d] mb-2">Branding</h3>
+        <p className="text-[#0f0f2d] text-xl">
           Whether you're just building out your marketing or looking to explore new strategies, we have the toolkits and experience to help you grow your business.
         </p>
+        <Horixontalrule/>
       </div>
 
        <div>
-        <h3 className="text-2xl font-bold text-[#0f0f2d] mb-2">Campaign Management</h3>
-        <p className="text-[#0f0f2d] text-lg">
+        <h3 className="text-4xl font-bold text-[#0f0f2d] mb-2">Campaign Management</h3>
+        <p className="text-[#0f0f2d] text-xl">
         Whether you're just building out your marketing or looking to explore new strategies, we have the toolkits and experience to help you grow your business.
          </p>
+       <Horixontalrule/>
       </div>
 
        <div>
-        <h3 className="text-2xl font-bold text-[#0f0f2d] mb-2">Content Marketing</h3>
-        <p className="text-[#0f0f2d] text-lg">
+        <h3 className="text-4xl font-bold text-[#0f0f2d] mb-2">Content Marketing</h3>
+        <p className="text-[#0f0f2d] text-xl">
         Whether you're just building out your marketing or looking to explore new strategies, we have the toolkits and experience to help you grow your business.
         </p>
+        <Horixontalrule/>
       </div>
+
+       <Letsgrow/>
+
+      
+
     </div>
   </div>
 </section>

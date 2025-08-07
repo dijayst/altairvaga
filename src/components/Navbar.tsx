@@ -78,7 +78,7 @@ const Navbar = () => {
               {isOpen ? (
                 <p className="text-black font-bold">X</p>
               ) : (
-                <RxHamburgerMenu size={25} />
+                <RxHamburgerMenu size={25}  color="black"/>
               )}
             </button>
           </div>
@@ -86,8 +86,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <ul className="md:hidden flex flex-col space-y-4 px-6 pb-4 bg-white font-semibold">
-           <li><Link href="/">Home</Link></li>
+          <ul className="md:hidden flex flex-col space-y-4 px-6 pb-4 bg-white font-semibold text-black">
+           <li ><Link href="/">Home</Link></li>
            <li><Link href="/service">Service</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact us</Link></li>

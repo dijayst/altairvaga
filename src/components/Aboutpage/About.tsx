@@ -1,13 +1,51 @@
+'use client';
 import React from 'react'
 import { ourteam } from './data'
 import Image from "next/image";
 import Testimonials from '../Testimonials/Testimonials';
 import Eighthsection from '../Eightsection/Eighthsection';
 import RoleCards from '../RoleCards/RoleCards';
+import Header from '../Header/Header';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 export default function About() {
+const { ref, inView } = useInView({
+    triggerOnce: false, // animate only once
+    threshold: 0.2,     // 20% of the component is visible
+  });
+
+
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  const { ref: ref2, inView: inView2 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+
+
+  
+  const { ref: ref3, inView: inView3 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  const { ref: ref4, inView: inView4 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  
+  const { ref: ref5, inView: inView5 } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
   return (
-     <div className=" bg-[#f1f1f1]  ">
+     <div className=" bg-[#f1f1f1] py-20 ">
 
 
     
@@ -15,12 +53,25 @@ export default function About() {
   We are a team of creative minds and strategic thinkers, dedicated to helping businesses reach their full potential. Our approach is simple: understand your business, identify your unique selling proposition, and develop a marketing strategy that will help you stand out in a crowded market.
 </p>
 
-     <div className='md:px-15 px-5'><div className="border w-full h-0.5 bg-black my-30  "></div></div>
+
+
+
+ <div className="px-15 py-20">
+   <div className="border w-full h-0.5 border-black  "></div></div>
+ 
+
+
+
+
+
+
+
+   
       <section className=" py-16  my-10  md:px-15 px-5">
         <div className="">
-          <h2 className="text-center py-[2rem] text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-green-3a mb-6">Meet Our Team</h2>
+          <h2 className="text-center py-[2rem] text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#19183a] mb-6">Meet Our Team</h2>
 
-          <div className="grid grid-cols-1 md:grid-row-2 gap-10  justify-items-center w-full ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10  justify-items-center ">
             {ourteam.map((member, i) => (
               <div
                 key={i}
@@ -28,7 +79,7 @@ export default function About() {
               >
                
                 <div className=" py-3">
-                  <h3 className="text-xl font-semibold ">{member.name}</h3>
+                  <h3 className="text-xl font-semibold text-[#19183a] ">{member.name}</h3>
                   <p className="text-gray-600 text-xl">{member.title}</p>
                 </div>
                 <div><p className='text-gray-600 text-xl'>{member.describe}</p></div>
@@ -57,56 +108,88 @@ export default function About() {
 
                   <section className="bg-[#f1f1f1] py-16   md:px-15 px-5">
   <div className="max-w-4xl mx-auto">
-    <h2 className="text-5xl font-semibold text-gray-900 mb-12">Our Values</h2>
-
+<Header/>
  
     <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">Excellence</h3>
-      <p className="text-lg text-gray-700 leading-relaxed">
-        We strive for excellence in everything we do. Whether it's providing
+       <motion.p
+      ref={ref}
+      className="text-2xl text-gray-700 leading-relaxed"
+      initial={{ opacity: 0, x: -100 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >      We strive for excellence in everything we do. Whether it's providing
         top-quality products and services or delivering exceptional customer
         experiences, we always aim to exceed expectations.
-      </p>
+      </motion.p>
     </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">Creativity</h3>
-      <p className="text-lg text-gray-700 leading-relaxed">
-        We believe that creativity is the key to innovation and success. That's
-        why we encourage our team to think outside the box, experiment with new
-        ideas, and continuously push boundaries.
-      </p>
+      <motion.p
+      ref={ref1}
+      className="text-2xl text-gray-700 leading-relaxed"
+      initial={{ opacity: 0, x: -100 }}
+      animate={inView1 ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >      We strive for excellence in everything we do. Whether it's providing
+        top-quality products and services or delivering exceptional customer
+        experiences, we always aim to exceed expectations.
+      </motion.p>
+  
     </div>
 
      <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">Partnership</h3>
-      <p className="text-lg text-gray-700 leading-relaxed">
+      <motion.p
+      ref={ref2}
+      className="text-2xl text-gray-700 leading-relaxed"
+      initial={{ opacity: 0, x: -100 }}
+      animate={inView2 ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    > 
        Collaboration is at the heart of what we do. Wevalue partnerships and seek to build strong, lasting relationships with ourclients, vendors, and other agencies.
-      </p>
+      </motion.p>
     </div>
 
 
     <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4"> Integrity</h3>
-      <p className="text-lg text-gray-700 leading-relaxed">
-     
+       <motion.p
+      ref={ref3}
+      className="text-2xl text-gray-700 leading-relaxed"
+      initial={{ opacity: 0, x: -100 }}
+      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    > 
 We hold ourselves to the highest ethical standards and are committedto doing the right thing, even when no one is watching. Trust and transparencyare fundamental to the way we operate.
-        </p>
+        </motion.p>
     </div>
 
 
     <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">Teamwork</h3>
-      <p className="text-lg text-gray-700 leading-relaxed">
-    
-We believe that great things are achieved through teamwork. Wefoster a culture of collaboration, communication, and mutual support, whereevery team member has a voice and is valued.  </p>
+       <motion.p
+      ref={ref4}
+      className="text-2xl text-gray-700 leading-relaxed"
+      initial={{ opacity: 0, x: -100 }}
+      animate={inView4 ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    > 
+We believe that great things are achieved through teamwork. Wefoster a culture of collaboration, communication, and mutual support, whereevery team member has a voice and is valued.  </motion.p>
     </div>
 
     <div className="mb-12">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4"> Tech-Driven</h3>
-      <p className="text-lg text-gray-700 leading-relaxed">
-    
-We are passionate about technology and how it can transformbusinesses and industries. We leverage the latest tools and platforms to driveinnovation, efficiency, and growth.  </p>
+       <motion.p
+      ref={ref5}
+      className="text-2xl text-gray-700 leading-relaxed"
+      initial={{ opacity: 0, x: -100 }}
+      animate={inView5 ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    > 
+We are passionate about technology and how it can transformbusinesses and industries.
+ We leverage the latest tools and platforms to driveinnovation, efficiency, and growth.  </motion.p>
     </div>
   </div>
 </section>
