@@ -20,7 +20,7 @@ export default function Footer() {
                   {/* Logo */}
                   <div>
                       <Image width={180} height={50} alt="logo" src={""} />
-                      Altairvega
+                     
                   </div>
 
                   {/* Address + Privacy */}
