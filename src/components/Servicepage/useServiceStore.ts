@@ -6,6 +6,6 @@ interface ServiceStore {
 }
 
 export const useServiceStore = create<ServiceStore>((set) => ({
-  selectedService: null,
+  selectedService: "Brand Strategy", // <-- Set default here
   setSelectedService: (service: string | null) => set({ selectedService: service }),
 }));

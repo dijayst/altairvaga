@@ -1,14 +1,8 @@
 
 'use client';
 
-import { motion, useAnimation } from 'framer-motion'
-import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer';
-import Fourthsection from '../Fourthsection/Fourthsection';
 import Eighthsection from '../Eightsection/Eighthsection';
-import Servicecontent from './Servicecontent';
-import Horixontalrule from './horixontalrule';
-import Letsgrow from '../Letgrowbtn/Letsgrow';
 import Image from "next/image";
 import ServicesCategory from './ServiceCategory';
 import { useServiceStore } from './useServiceStore';
@@ -29,7 +23,7 @@ export default function Service() {
 
    
 
-    <section className=" py-16 font-nunito ">
+    <section className="  font-nunito ">
    
     {/* Left Heading */}
     <div className="flex flex-col gap-5">
@@ -37,35 +31,32 @@ export default function Service() {
         Here is what 
         we can <span className="italic">offer</span>.
       </h2>
-     <div className="  grid grid-cols-1 md:grid-cols-2 gap-10 text-center text-[#9a8495] max-w-9xl mx-auto">
-     
-      <ServicesCategory/>
+   
 
-       {selectedService && (
-        <div className="bg-white p-6 rounded-2xl shadow-md flex-1 transition-all duration-300">
-          <h3 className="text-2xl font-bold mb-4 text-gray-800">{selectedService}</h3>
-          <p className="text-black">
-            Detailed information about <strong>{selectedService}</strong> will appear here. You can
-            expand this with actual data or content.
-          </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 text-center text-[#9a8495] max-w-7xl mx-auto gap-10">
+ <div className="flex w-full"> <ServicesCategory /></div>
 
- <div className="w-full  relative lg:h-[600px]">
-      <Image
-        src="/images/service-2.jpg"
-        alt="Top Left"
-        width={402}
-        height={696}
-        className="w-full h-full object-cover rounded-lg shadow"
-      />
+  {selectedService && (
+    <div className="bg-white rounded-2xl shadow-md flex-1 transition-all duration-300 p-6">
+      <h3 className="text-2xl font-bold mb-4 text-gray-800">{selectedService}</h3>
+      <p className="text-black mb-4">
+        Detailed information about <strong>{selectedService}</strong> will appear here. You can
+        expand this with actual data or content.
+      </p>
+
+      <div className="w-full relative h-[350px] lg:h-[400px]">
+        <Image
+          src="/images/service-2.jpg"
+          alt="Top Left"
+          width={402}
+          height={400}
+          className="w-full h-full object-cover rounded-lg shadow"
+        />
+      </div>
     </div>
+  )}
+</div>
 
-
-        </div>
-      )}
-    </div>
-
-    
-      
 
   </div>
    
@@ -75,7 +66,7 @@ export default function Service() {
  
 </section>
 
-    <div className="md:px-15 px-5">
+    <div className="md:px-15 px-5 pt-20">
          <Eighthsection/></div>
 
 
