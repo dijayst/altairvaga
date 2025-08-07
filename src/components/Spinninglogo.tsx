@@ -12,7 +12,7 @@ export default function Spinninglogo() {
   animate={{ scale: 1, opacity: 1 }}
   transition={{ duration: 1.5, ease: "easeOut" }}
 >
-  <div className="max-h-[12rem] flex items-center justify-center">
+  <div className="max-h-[12rem] flex items-center justify-center font-nunito ">
     <div className="relative w-44 h-64 mx-auto">
       {/* Rotating circular text */}
       <motion.svg
@@ -37,10 +37,11 @@ export default function Spinninglogo() {
           />
         </defs>
         <text
-          fill="#1e1e3f"
+          fill="#ffff"
           fontSize="25"
           fontWeight="500"
           letterSpacing="3"
+         
         >
           <textPath href="#circlePath" startOffset="0" textLength="628">
             * LEADING MARKETING, BRANDING & DESIGN AGENCY *
@@ -50,7 +51,7 @@ export default function Spinninglogo() {
 
       {/* Center logo */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-5xl font-serif text-violet-600">gb</span>
+        <span className="text-5xl font-serif text-white">AV</span>
       </div>
     </div>
   </div>

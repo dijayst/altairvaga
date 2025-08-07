@@ -49,7 +49,7 @@ const { ref, inView } = useInView({
 
 
     
-      <p className="max-w-130 text-black text-xl sm:text-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80">
+      <p className="max-w-130 font-nunito text-black text-xl sm:text-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80">
   We are a team of creative minds and strategic thinkers, dedicated to helping businesses reach their full potential. Our approach is simple: understand your business, identify your unique selling proposition, and develop a marketing strategy that will help you stand out in a crowded market.
 </p>
 
@@ -69,17 +69,17 @@ const { ref, inView } = useInView({
    
       <section className=" py-16  my-10  md:px-15 px-5">
         <div className="">
-          <h2 className="text-center py-[2rem] text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#19183a] mb-6">Meet Our Team</h2>
+          <h2 className="text-center font-nunito py-[2rem] text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#19183a] mb-6">Meet Our Team</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10  justify-items-center ">
             {ourteam.map((member, i) => (
               <div
                 key={i}
-                className="  transition-shadow duration-300  text-justify  "
+                className="  transition-shadow duration-300  text-justify font-nunito  "
               >
                
                 <div className=" py-3">
-                  <h3 className="text-xl font-semibold text-[#19183a] ">{member.name}</h3>
+                  <h3 className="text-xl font-semibold text-[#19183a] font-nunito ">{member.name}</h3>
                   <p className="text-gray-600 text-xl">{member.title}</p>
                 </div>
                 <div><p className='text-gray-600 text-xl'>{member.describe}</p></div>
@@ -111,10 +111,10 @@ const { ref, inView } = useInView({
 <Header/>
  
     <div className="mb-12">
-      <h3 className="text-2xl font-semibold text-gray-900 mb-4">Excellence</h3>
+      <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-nunito">Excellence</h3>
        <motion.p
       ref={ref}
-      className="text-2xl text-gray-700 leading-relaxed"
+      className="text-2xl text-gray-700 leading-relaxed font-nunito"
       initial={{ opacity: 0, x: -100 }}
       animate={inView ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -125,10 +125,10 @@ const { ref, inView } = useInView({
     </div>
 
     <div>
-      <h3 className="text-2xl font-semibold text-gray-900 mb-4">Creativity</h3>
+      <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-nunito">Creativity</h3>
       <motion.p
       ref={ref1}
-      className="text-2xl text-gray-700 leading-relaxed"
+      className="text-2xl text-gray-700 leading-relaxed font-nunito"
       initial={{ opacity: 0, x: -100 }}
       animate={inView1 ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -139,8 +139,8 @@ const { ref, inView } = useInView({
   
     </div>
 
-     <div className="mb-12">
-      <h3 className="text-2xl font-semibold text-gray-900 mb-4">Partnership</h3>
+     <div className="mb-12 font-nunito">
+      <h3 className="text-2xl font-semibold text-gray-900 mb-4 ">Partnership</h3>
       <motion.p
       ref={ref2}
       className="text-2xl text-gray-700 leading-relaxed"
@@ -153,7 +153,7 @@ const { ref, inView } = useInView({
     </div>
 
 
-    <div className="mb-12">
+    <div className="mb-12 font-nunito">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4"> Integrity</h3>
        <motion.p
       ref={ref3}
@@ -167,7 +167,7 @@ We hold ourselves to the highest ethical standards and are committedto doing the
     </div>
 
 
-    <div className="mb-12">
+    <div className="mb-12 font-nunito">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">Teamwork</h3>
        <motion.p
       ref={ref4}
@@ -179,7 +179,7 @@ We hold ourselves to the highest ethical standards and are committedto doing the
 We believe that great things are achieved through teamwork. Wefoster a culture of collaboration, communication, and mutual support, whereevery team member has a voice and is valued.  </motion.p>
     </div>
 
-    <div className="mb-12">
+    <div className="mb-12 font-nunito">
       <h3 className="text-2xl font-semibold text-gray-900 mb-4"> Tech-Driven</h3>
        <motion.p
       ref={ref5}
@@ -196,7 +196,7 @@ We are passionate about technology and how it can transformbusinesses and indust
 
 <div>
 
-<div className="py-20 flex items-center justify-center px-4">
+<div className="py-20 flex items-center justify-center px-4 font-nunito">
   <div className="flex flex-col items-center text-center md:max-w-[60%] w-full">
     <p className="text-6xl text-[#19183a] leading-snug">
       Here's a sneek peak of our world-class roster of talent.

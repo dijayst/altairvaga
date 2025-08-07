@@ -39,11 +39,11 @@ export default function Home() {
   return (
     <div className=" bg-[#f1f1f1] flex flex-col ">
     
-   <div className="md:px-15 px-5">  <Secondsection/></div>
+   <div className="md:px-15 px-5 py-10">  <Secondsection/></div>
 
    {/*<div className=" md:px-15 px-5 "><Thirdsection/></div>*/}
   
-   <div className="text-5xl sm:text-6xl font-light text-center leading-tight text-gray-900 h-screen md:py-50 py-20 ">
+   <div className="text-5xl font-nunito sm:text-6xl font-light text-center leading-tight  text-gray-900  md:py-20 py-20 ">
       {lines.map((line, i) => (
         <motion.span
           key={i}
@@ -71,8 +71,8 @@ export default function Home() {
   />
 </div>
     <div className="mb-20 md:px-15 px-5">
-      <p    className="md:text-6xl text-4xl flex flex-col justify-center text-center font-medium text-black">
-        <span>Our Marketing Services are purpose-built</span><span> around your <span className="italic">funnel</span>, to help you create </span><span>sustainable, predictable <span className="italic">growth.</span></span>
+      <p    className="md:text-6xl text-4xl font-nunito flex flex-col justify-center text-center font-medium text-black">
+        Our Marketing Services are purpose-built around your funnel, to help you create sustainable, predictable <span className="italic">growth.</span>
       </p>
      
     </div>
@@ -80,7 +80,7 @@ export default function Home() {
     {/*
     <div className="mt-20 md:px-15 px-5">
     <Sixthsection/></div>*/}
-    <div className="bg-[#19183a] md:px-15 px-5">
+    <div className=" md:px-15 px-5">
     <Seventhsection/></div>
 
 

@@ -1,8 +1,8 @@
-import { Montserrat, Space_Mono } from "next/font/google";
-
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  display: "swap",
+import { Nunito, Space_Mono } from "next/font/google";
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800'], // adjust as needed
+  variable: '--font-nunito',
 });
 
 export const space_mono = Space_Mono({

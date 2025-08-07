@@ -130,7 +130,7 @@ export default function RoleCards() {
     ));
 
   return (
-    <div className="min-h-screen bg-[#f1f1f1] flex flex-col items-center justify-center p-10 space-y-10 overflow-hidden">
+    <div className="min-h-screen bg-[#f1f1f1] font-nunito flex flex-col items-center justify-center p-10 space-y-10 overflow-hidden">
       
       {/* Scroll left */}
       <div className="w-full overflow-hidden">

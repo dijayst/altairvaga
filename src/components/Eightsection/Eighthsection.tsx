@@ -13,13 +13,13 @@ export default function Eighthsection() {
   });
   return (
     <div >
-      <p className="flex flex-col items-center text-center md:text-6xl text-4xl font-medium text-[#19183a]">
+      <p className="flex flex-col items-center text-center md:text-6xl text-4xl font-nunito font-medium text-[#19183a] font-nunito">
   <span>Our approach is different</span>
   <span>than other agencies.</span>
 </p>
 
 
-<div className="py-20 flex items-center justify-center  px-4">
+<div className="py-20 flex items-center justify-center  px-4 font-nunito">
       <div className="flex flex-col items-center text-center md:max-w-[50%] w-full">
         <motion.p
       ref={ref5}
@@ -36,7 +36,7 @@ export default function Eighthsection() {
 
         <div className="flex md:flex-row flex-col items-center justify-center gap-4 mt-6">
            <Letsgrow/>
-          <p className="text-xl font-medium text-gray-800 hover:decoration- hover:underline cursor-pointer hover:decoration-[[#6100ff]]">
+          <p className="text-xl font-medium text-gray-800 hover:decoration- hover:underline cursor-pointer hover:decoration-[#ff5b46]">
             Book a meeting
           </p>
         </div>

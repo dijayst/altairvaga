@@ -14,7 +14,7 @@ export default function Footer() {
     
           
           
-          <div className="bg-[#141336] px-6 lg:px-[3rem] text-[#6ddce1] py-10">
+          <div className="bg-[#4637c1] px-6 lg:px-[3rem] text-[#6ddce1] py-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
                   {/* Logo */}

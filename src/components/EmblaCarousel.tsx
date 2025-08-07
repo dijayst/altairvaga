@@ -15,7 +15,7 @@ export function EmblaCarousel({ list }: { list: any[] }) {
   ]);
 
   return (
-    <div ref={emblaRef} className="overflow-hidden w-full">
+    <div ref={emblaRef} className="overflow-hidden w-full font-nunito">
       <div className="flex gap-10 max-w-[1000] px-4 py-2 ">
         {list.map((item, index) => (
           <div

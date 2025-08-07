@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <motion.h2
       ref={ref}
-      className="text-5xl font-semibold text-gray-900 mb-12 flex"
+      className="text-5xl font-semibold text-gray-900 mb-12 flex font-nunito"
       variants={containerVariants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}

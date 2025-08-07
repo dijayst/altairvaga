@@ -26,7 +26,7 @@ export default function Secondsection() {
   return (
     
        <>
-       <div className='flex flex-col  justify-center items-center py-20 md:px-40 px-0 '>
+       <div className='flex flex-col  justify-center items-center md:px-40 px-0 font-nunito '>
      
  <div ref={ref} className="flex flex-col px-0 md:px-15 text-2xl text-black overflow-hidden">
       {lines.map((line, index) => (
@@ -43,7 +43,7 @@ export default function Secondsection() {
 
       <div className="flex justify-center items-center gap-4 mt-4">
         <Letsgrow/>
-        <p className="hover:underline hover:decoration-blue-500 text-black uppercase font-medium">book a meeting</p>
+        <p className="hover:underline hover:decoration-[#ff5b46] text-black uppercase font-medium">book a meeting</p>
       </div>
 
     </div>

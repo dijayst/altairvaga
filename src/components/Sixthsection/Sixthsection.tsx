@@ -11,7 +11,7 @@ export default function Sixthsection() {
 
    <>
    
-   <div className="bg-gray-100 p-10 relative overflow-hidden my-20">
+   <div className="bg-gray-100 p-10 relative overflow-hidden my-20 font-nunito">
       {/* Statistics Section */}
 
 

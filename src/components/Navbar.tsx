@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
    
 
-      <div className="fixed top-0 left-0 z-50 w-full bg-[#f1f1f1] ">
+      <div className="fixed top-0 left-0 z-50 w-full bg-[#0e0a44] font-nunito">
         <nav className="flex justify-between items-center mx-auto max-w-6xl w-full px-4 py-4">
           {/* Logo */}
           <div className="flex w-1/3 text-left  space-x-2 text-[#163546]">
@@ -32,16 +32,16 @@ const Navbar = () => {
                 alt="Logo"
                 className="w-6 h-6 rounded-2xl"
               />
-              <p className="font-semibold font-inter text-3xl text-[#3e80e4]">Altairvega</p>
+              <p className="font-semibold font-inter text-3xl text-[#ff5b46]">Altairvega</p>
             </Link>
           </div>
 <div className="flex w-1/3 items-center gap-2 justify-center   ">
-          <ul className="hidden md:flex items-center space-x-6 text-[#163546] font-light">
-            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/">Home</Link></li>
-            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/service">Service</Link></li>
-            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/about">About</Link></li>
-            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/contact">Contact us</Link></li>
-            <li className="hover:text-[#3e80e4] font-semibold"><Link href="/blog">Blog</Link></li>
+          <ul className="hidden md:flex items-center space-x-6 text-white font-light">
+            <li className="hover:text-[#ff5b46] font-semibold"><Link href="/">Home</Link></li>
+            <li className="hover:text-[#ff5b46] font-semibold"><Link href="/service">Service</Link></li>
+            <li className="hover:text-[#ff5b46] font-semibold"><Link href="/about">About</Link></li>
+            <li className="hover:text-[#ff5b46] font-semibold whitespace-nowrap"><Link href="/contact">Contact us</Link></li>
+            <li className="hover:text-[#ff5b46] font-semibold"><Link href="/blog">Blog</Link></li>
           </ul>
           </div>
  
@@ -49,14 +49,6 @@ const Navbar = () => {
            
 
 
-            <div className="hidden md:block w-1/3 text-right">
-  <Link
-    href="/"
-    className="text-black px-6 py-2 text-lg uppercase rounded hover:underline underline whitespace-nowrap hover:decoration-blue-500 font-semibold"
-  >
-    let’s Grow
-  </Link>
-</div>
 
            
 
@@ -76,9 +68,9 @@ const Navbar = () => {
           <div className="md:hidden pr-2">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? (
-                <p className="text-black font-bold">X</p>
+                <p className="text-white font-bold">X</p>
               ) : (
-                <RxHamburgerMenu size={25}  color="black"/>
+                <RxHamburgerMenu size={25}  color="white"/>
               )}
             </button>
           </div>
@@ -92,7 +84,6 @@ const Navbar = () => {
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact us</Link></li>
             <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/blog">let’s Grow</Link></li>
             
           </ul>
         )}

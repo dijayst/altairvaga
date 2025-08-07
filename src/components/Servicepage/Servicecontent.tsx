@@ -21,7 +21,7 @@ useEffect(() => {
         initial={{ opacity: 0, x: 100 }}
         animate={controls}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-130 text-black text-xl sm:text-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80"
+        className="max-w-130 text-black text-xl font-nunito sm:text-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80"
       >
         Whether you're
         just building out your marketing or looking to explore new strategies, 

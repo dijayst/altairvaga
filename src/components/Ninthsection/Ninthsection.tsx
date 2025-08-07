@@ -4,7 +4,7 @@ import { FiArrowRight } from 'react-icons/fi'
 
 export default function Ninthsection() {
   return (
-    <div className=" text-white flex gap-20 justify-between py-30 md:flex-row flex-col">
+    <div className=" text-white flex gap-20 justify-between py-30 md:flex-row flex-col font-nunito">
     <p className='text-justify flex flex-col md:text-6xl text-4xl font-medium'>
       <span>Start making the </span><span>most of your </span><span>company's </span><span> potential.</span></p>
       

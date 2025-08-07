@@ -4,10 +4,8 @@ import React from 'react'
 
 export const Content = ({ text,text2,text3 }: { text: string,text2:string,text3:string }) => {
   return (
-   <>
-    
-    <div>
-        <div className='justify-center items-center flex flex-col text-[#19183a] w-full'>
+  
+        <div className='justify-center font-nunito items-center flex flex-col text-white w-full'>
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -41,7 +39,10 @@ export const Content = ({ text,text2,text3 }: { text: string,text2:string,text3:
             height={100}
             alt="underline" />
         </div>
-      </div></>
+      
+
+
+      
 
   )
 }

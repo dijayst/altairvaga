@@ -17,26 +17,23 @@ export const stats = [
 
 
 export const whatwedo = [
-  {
-    id: "01",
+  {zero:"0",
+    id: "1",
     value:"ATTRACT CUSTOMERS",
     text: 'Attract more visitors to your website and use proven strategies to convert visitors into qualified leads and delighted customers.',
 
   },
-  { id: "02",
+  { zero:"0",
+    id: "2",
     value: 'ENGAGE PROSPECTS',
     text: 'Engage your contacts and visitors with interactive and high performance content, email marketing campaigns, and webinars.',
   },
-  {
-     id: "03",
+  {zero:"0",
+     id: "3",
     value: 'CONVERT CLIENTS',
     text: 'Use advanced marketing predictive analytics to score and convert the right prospects, at precisly the right time.',
   },
-   {
-     id: "04",
-    value: 'RETAIN CLIENTS',
-    text: 'Keeping your customers happy goes beyond just your product. Engage your customers through various other channels.',
-  },
+  
 ];
 
 
