@@ -43,7 +43,7 @@ export default function Home() {
 
    {/*<div className=" md:px-15 px-5 "><Thirdsection/></div>*/}
   
-   <div className="text-5xl font-nunito sm:text-6xl font-light text-center leading-tight  text-gray-900  md:py-20 py-20 ">
+   <div className="text-5xl font-nunito sm:text-6xl font-light text-center leading-tight  text-gray-900  md:py-20 py-0 ">
       {lines.map((line, i) => (
         <motion.span
           key={i}

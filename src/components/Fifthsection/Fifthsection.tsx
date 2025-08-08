@@ -3,7 +3,7 @@ import { whatwedo } from '../Fourthsection/data'
 
 export default function Fifthsection() {
   return (
-    <div className=" md:py-12 py-0 px-6 font-nunito">
+    <div className=" py-12 px-6">
          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center text-[#9a8495] max-w-9xl mx-auto  ">
            {whatwedo.map((item, index) => (
              <div key={index} className=' text-justify px-5 hover:text-[#ff5b46] shadow-md bg-white '>

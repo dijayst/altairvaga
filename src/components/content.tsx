@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import React from 'react'
 
 export const Content = ({ text,text2,text3 }: { text: string,text2:string,text3:string }) => {
@@ -33,11 +32,7 @@ export const Content = ({ text,text2,text3 }: { text: string,text2:string,text3:
             {text3}
           </motion.p>
 
-          <Image
-            src="/image/642310daa3b52127b6a47193_header_mark-text.svg"
-            width={500}
-            height={100}
-            alt="underline" />
+         
         </div>
       
 

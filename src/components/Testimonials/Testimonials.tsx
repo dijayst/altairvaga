@@ -17,7 +17,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-     <div className="bg-gray-100 min-h-screen flex flex-col font-nunito justify-between py-20 px-8 md:px-24 font-sans text-[#0C0A3E] overflow-hidden ">
+     <div className="bg-gray-100  flex flex-col font-nunito justify-between py-20 px-8 md:px-24 font-sans text-[#0C0A3E] overflow-hidden ">
           {/* Top Navigation */}
           <div className="flex justify-between items-center w-full text-sm">
               <div className="uppercase tracking-widest font-semibold text-[#ff5b46]">
@@ -64,6 +64,7 @@ export default function Testimonials() {
                   </motion.div>
               </AnimatePresence>
           </div>
+           
       </div>
       
   )
