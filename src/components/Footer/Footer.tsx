@@ -1,61 +1,94 @@
 import React from 'react'
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa'
-import Ninthsection from '../Ninthsection/Ninthsection'
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { Facebook, Instagram, LinkedIn, TwitterXIcon } from './Icons/SocialMedia'
+import { Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
+    
+  const router = useRouter();
   return (
 
-      <div className='bg-[#141336]  px-15'>
-        <Ninthsection />
-      <div className="border w-full h-0.5 bg-white my-30"></div>
-      <footer className=" text-white py-16 ">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-              {/* Logo & Contact */}
-              <div>
-                  <h2 className="text-3xl font-serif mb-6">goodbrand</h2>
-                  <p className="mb-2">+01 234 567 77</p>
-                  <p className="mb-2 underline">grow@goodbrand.io</p>
-                  <p>3711 South Mopac Expressway, Austin TX 78746</p>
-              </div>
+    
+          
+          
+          <div className="bg-[#4637c1] px-6 lg:px-[3rem] text-[#6ddce1] py-10">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
-              {/* Discover */}
-              <div>
-                  <h3 className="font-semibold mb-4">Discover</h3>
-                  <ul className="space-y-2 text-sm">
-                      <li>Services</li>
-                      <li>About</li>
-                      <li>Work</li>
-                      <li>Contact</li>
-                      <li>Blog</li>
-                  </ul>
-              </div>
+                  {/* Logo */}
+                  <div>
+                      <Image width={180} height={50} alt="logo" src={""} />
+                     
+                  </div>
 
-              {/* Newsletter */}
-              <div className="md:col-span-2">
-                  <h3 className="font-semibold mb-4">Sign up for our newsletter</h3>
-                  <div className="flex items-center border-b border-gray-500">
-                      <input
-                          type="email"
-                          placeholder="E-mail"
-                          className="bg-transparent text-white w-full py-2 px-2 outline-none placeholder-gray-400" />
-                      <button className="text-xl text-white pr-2">&rarr;</button>
+                  {/* Address + Privacy */}
+                  <div className="flex flex-col lg:flex-row items-center gap-10 text-white">
+
+                      {/* Contact Info */}
+                      <div className="flex flex-col gap-3 mt-4 text-center lg:text-left">
+                          <p className="flex items-center gap-2 justify-center lg:justify-start hover:text-[white]">
+                              <span className="text-white">
+                                  <MapPin color="white" />
+                              </span>
+                              Chicago, Illinois.
+                          </p>
+                          {/*
+    <p className="flex items-center gap-2 justify-center lg:justify-start hover:text-[white]">
+      <span className="text-white">
+        <Phone color="white" />
+      </span>
+      
+    </p>*/}
+                          <p
+                              className="flex items-center gap-2 justify-center lg:justify-start hover:text-[white]">
+                              <span className="text-white">
+                                  <Mail color="white" />
+                              </span>
+                              grow@goodbrand.io
+                          </p>
+                      </div>
+
+                      {/* Privacy & Copyright  onClick={() => setOpenPrivacy(true)}*/}
+                      <div className="flex flex-col text-center lg:text-left pt-6 lg:pt-0">
+                          <p
+                              className="cursor-pointer hover:opacity-55 hover:text-[white]"
+
+                          >
+                              Privacy Policy
+                          </p>
+                          <p className="cursor-pointer hover:text-[white]">
+                              Copyright © 2023 Goodbrand®
+                          </p>
+                      </div>
                   </div>
-                  <p className="text-sm text-gray-400 mt-4">
-                      By signing up to receive emails from Goodbrand, you agree to our{' '}
-                      <a href="#" className="text-white underline">
-                          Privacy Policy
-                      </a>
-                      . We treat your info responsibly. Unsubscribe anytime.
-                  </p>
-                  <div className="flex gap-4 mt-6">
-                      <FaLinkedinIn className="text-white text-xl hover:text-gray-300 cursor-pointer" />
-                      <FaTwitter className="text-white text-xl hover:text-gray-300 cursor-pointer" />
+
+                  {/* Social Icons */}
+                  <div className="flex gap-4 pt-6 lg:pt-0">
+                      <Facebook
+                          color="white"
+                          className="cursor-pointer"
+                          onClick={() => router.push(
+                              "https://www.facebook.com/profile.php?id=61577588234877&mibextid=wwXIfr&mibextid=wwXIfr"
+                          )} />
+                      <Instagram
+                          color="white"
+                          className="cursor-pointer"
+                          onClick={() => router.push("https://www.instagram.com/unlockcoop?igsh=Mnd6MnFlMnM0bnV5&utm_source=qr")} />
+                      <LinkedIn
+                          color="white"
+                          className="cursor-pointer"
+                          onClick={() => router.push("https://www.linkedin.com/company/unlock-co-op/")} />
+
+                      <TwitterXIcon
+                          color="white"
+                          className="cursor-pointer"
+                          onClick={() => router.push("")} />
                   </div>
+
               </div>
           </div>
-          <p className="text-center text-gray-400 text-sm mt-10">
-              Copyright © 2023 Goodbrand®
-          </p>
-      </footer></div>
+
   )
 }

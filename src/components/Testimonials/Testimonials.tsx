@@ -1,35 +1,71 @@
-import React from "react";
-import CardHelper from "./CardHelper";
+'use client';
+import React, { useEffect, useState } from 'react'
+import { testimonials } from './data';
+import { AnimatePresence, motion } from 'framer-motion';
+import Image from "next/image";
+import { FaQuoteLeft } from 'react-icons/fa';
 
-function Testimonials() {
+export default function Testimonials() {
+
+    const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000); // auto-slide every 5s
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className=" py-[4rem] mb-[4rem] px-6 lg:px-[5rem] bg-[#f8f8f8] w-full">
-      <div className="justify-center items-center flex">
-      <p className=" max-lg:text-center text-3xl lg:text-5xl md:text-xl font-bold py-[3rem] text-green-3a">
-        What Our Customers say about Unlock Coop
-      </p></div>
-      <div className="grid lg:grid-cols-3 place-items-stretch gap-5">
-        <CardHelper
-          text="Impressed with Nusa Tech's professionalism and competence. They understand our needs and provide innovative solutions, with outstanding customer service."
-          name="Micheal Lee"
-        
-          description="Small Business Owner of a Local Cafe"
-        />
-        <CardHelper
-          text="Unlock Coop significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended!"
-          name="Jessica Taylor"
-         
-          description="Director of Marketing Startup"
-        />
-        <CardHelper
-          text="Very satisfied with Unlock Coop's work. They've improved our brand visibility online and provided valuable insights. Thank you!"
-          name="David Smith"
-       
-          description="CEO of Digital Startup"
-        />
-      </div>
-    </div>
-  );
-}
+     <div className="bg-gray-100  flex flex-col font-nunito justify-between py-20 px-8 md:px-24 font-sans text-[#0C0A3E] overflow-hidden ">
+          {/* Top Navigation */}
+          <div className="flex justify-between items-center w-full text-sm">
+              <div className="uppercase tracking-widest font-semibold text-[#ff5b46]">
+                  What our clients say
+              </div>
+              <div className="text-right">{index + 1} / {testimonials.length}</div>
+          </div>
 
-export default Testimonials;
+          {/* Testimonial Slider */}
+          <div className="mt-10 relative h-[370px] md:h-[350px]">
+              <AnimatePresence mode="wait">
+                  <motion.div
+                      key={index}
+                      initial={{ x: 100, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      exit={{ x: -100, opacity: 0 }}
+                      transition={{ duration: 0.8, ease: "easeInOut" }}
+                      className="absolute top-0 left-0 w-full"
+                  >
+                          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+    
+                           <div className="flex-shrink-0 relative md:w-32 w-15 md:h-32 h-15 flex items-center justify-center rounded-full bg-[#3e80e4] text-white text-3xl font-bold">
+                                    <FaQuoteLeft />
+                                   
+                                  </div>
+                                  <div>
+                          <p className="text-3xl md:text-5xl font-medium leading-tight">
+                              {testimonials[index].quote}
+                          </p>
+                         
+                          <div className="flex items-center gap-4 border-t pt-4">
+            
+             <Image width={100} height={100} src={testimonials[index].image}
+              alt={testimonials[index].name}
+              className="w-20 h-20 rounded-full object-cover"
+        />
+     
+            <div>
+              <p className="font-semibold text-black">{testimonials[index].name}</p>
+              <p className="text-sm text-gray-500">{testimonials[index].role}</p>
+            </div>
+          </div></div>
+                      </div>
+                  </motion.div>
+              </AnimatePresence>
+          </div>
+           
+      </div>
+      
+  )
+}

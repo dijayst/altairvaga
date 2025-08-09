@@ -24,7 +24,7 @@ export default function Contactus() {
     
     
     
-    <div className="bg-[#f7f7f7] text-[#333] py-16 px-4">
+    <div className="bg-[#f1f1f1] text-[#333] py-16 px-4 font-nunito">
         <div className="max-w-4xl mx-auto">
           <form className="space-y-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -76,7 +76,7 @@ export default function Contactus() {
               . We treat your info responsibly.
             </p>
 
-            <button className="bg-[#6100ff] text-white px-8 py-3 rounded-full text-lg font-medium w-fit hover:bg-purple-700 transition">
+            <button className="bg-[#ff5b46] text-white px-8 py-3 rounded-full text-lg font-medium w-fit hover:bg-purple-700 transition">
               Submit
             </button>
           </form>

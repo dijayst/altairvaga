@@ -6,13 +6,10 @@ import Fifthsection from "@/components/Fifthsection/Fifthsection";
 import Fourthsection from "@/components/Fourthsection/Fourthsection";
 import Secondsection from "@/components/Secondsection";
 import Seventhsection from "@/components/Seventhsection/Seventhsection";
-import Sixthsection from "@/components/Sixthsection/Sixthsection";
-import Thirdsection from "@/components/Thirdsection";
 import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import Testimonials from "@/components/Testimonials/Testimonials";
 import Eighthsection from "@/components/Eightsection/Eighthsection";
-import Ninthsection from "@/components/Ninthsection/Ninthsection";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 
 const textVariants: Variants = {
@@ -29,8 +26,8 @@ const textVariants: Variants = {
 };
 export default function Home() {
     const { ref, inView } = useInView({
-    triggerOnce: true, // animates only once
-    threshold: 0.2,     // adjust when it should animate
+    triggerOnce: true, 
+    threshold: 0.2,     
   });
 
 
@@ -42,11 +39,11 @@ export default function Home() {
   return (
     <div className=" bg-[#f1f1f1] flex flex-col ">
     
-   <div className="px-15">  <Secondsection/></div>
+   <div className="md:px-15 px-5 py-10">  <Secondsection/></div>
 
-   <div className=" px-15 "><Thirdsection/></div>
+   {/*<div className=" md:px-15 px-5 "><Thirdsection/></div>*/}
   
-   <div className="text-5xl sm:text-6xl font-light text-center leading-tight text-gray-900 h-screen py-50">
+   <div className="text-5xl font-nunito sm:text-6xl font-light text-center leading-tight  text-gray-900  md:py-20 py-0 ">
       {lines.map((line, i) => (
         <motion.span
           key={i}
@@ -63,19 +60,27 @@ export default function Home() {
     </div>
 
     
-  <div className="px-15 "> <Fourthsection/></div>
-  <div className="px-15">
-   <div className="border w-full h-0.5 bg-black my-30 "></div></div>
-    <div className="mb-20 px-15">
-      <p    className="text-6xl flex flex-col justify-center text-center font-medium">
-        <span>Our Marketing Services are purpose-built</span><span> around your <em>funnel</em>, to help you create </span><span>sustainable, predictable <em>growth.</em></span>
+  <div className="md:px-15 px-5 "> <Fourthsection/></div>
+
+   <div className="px-15">
+  <motion.div
+    className="border w-full h-0.5 border-black my-10 origin-left"
+    initial={{ scaleX: 0 }}
+    animate={{ scaleX: 1 }}
+    transition={{ duration: 1.2, ease: "easeOut" }}
+  />
+</div>
+    <div className="mb-20 md:px-15 px-5">
+      <p    className="md:text-6xl text-4xl font-nunito flex flex-col justify-center text-center font-medium text-black">
+        Our Marketing Services are purpose-built around your funnel, to help you create sustainable, predictable <span className="italic">growth.</span>
       </p>
      
     </div>
-    <div className="px-15"><Fifthsection/></div>
-    <div className="mt-20 px-15">
-    <Sixthsection/></div>
-    <div className="bg-[#19183a] px-15">
+    <div className="md:px-15 px-5"><Fifthsection/></div>
+    {/*
+    <div className="mt-20 md:px-15 px-5">
+    <Sixthsection/></div>*/}
+    <div className=" md:px-15 px-5">
     <Seventhsection/></div>
 
 
@@ -97,7 +102,7 @@ export default function Home() {
             </section>
      
      <Testimonials/>
-     <div className="px-15">
+     <div className="md:px-15 px-5">
      <Eighthsection/></div>
      
     </div>

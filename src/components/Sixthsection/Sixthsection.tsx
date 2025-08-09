@@ -11,7 +11,7 @@ export default function Sixthsection() {
 
    <>
    
-   <div className="bg-gray-100 p-10 relative overflow-hidden my-20">
+   <div className="bg-gray-100 p-10 relative overflow-hidden my-20 font-nunito">
       {/* Statistics Section */}
 
 
@@ -47,7 +47,7 @@ export default function Sixthsection() {
             'Email Marketing',
             'Blogging',
             'Case Studies',
-            'Marketing Automation',
+            'Marketing Automationn',
             'Events',
             'Webinars',
           ].map((item, idx) => (

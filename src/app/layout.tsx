@@ -1,21 +1,19 @@
 'use client';
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Spinninglogo from "@/components/Spinninglogo";
 import { usePathname } from "next/navigation";
 import { Content } from "@/components/content";
 import Footer from "@/components/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800'], 
+  variable: '--font-nunito',
 });
 
 export default function RootLayout({
@@ -48,17 +46,30 @@ contentTex2='transform their impact.';
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+       
+        className={nunito.variable}
       >
       <Navbar/>
 
        {showLogoAndContent && (
-        <div className="flex flex-col-reverse lg:flex-row px-4 lg:px-15 min-h-screen pt-20 lg:pt-40 bg-[#f1f1f1]">
-              <div className="flex w-full lg:w-[82%] items-center justify-center">
-                <Content text={contentText1} text2={contentTex2} text3={contentTex3} />
-              </div>
-              <div className="flex w-full lg:w-[18%] max-h-[12rem] items-center lg:items-end justify-center lg:justify-end">
-                <Spinninglogo />
+       
+          <div className="relative overflow-hidden">
+              {/* Background Image */}
+              <Image
+                src="/images/h1-background01.jpg" // replace with your image path
+                alt="Background"
+                fill
+                className="object-cover z-[-10]"
+                priority />
+
+              {/* Your Existing Code */}
+              <div className="flex flex-col-reverse lg:flex-row px-4 lg:px-15 md:min-h-screen pt-20 lg:pt-40 ">
+                <div className="flex w-full lg:w-[82%] items-center justify-center">
+                  <Content text={contentText1} text2={contentTex2} text3={contentTex3} />
+                </div>
+                <div className="flex w-full lg:w-[18%] max-h-[12rem] items-center lg:items-end justify-center lg:justify-end">
+                  <Spinninglogo />
+                </div>
               </div>
             </div>
 
