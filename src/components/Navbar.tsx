@@ -32,7 +32,7 @@ const Navbar = () => {
                 alt="Logo"
                 className="w-6 h-6 rounded-2xl"
               />
-              <p className="font-semibold font-inter text-3xl text-[#ff5b46]">Altairvega</p>
+              <p className="font-semibold font-inter text-3xl text-[#ff5b46]">Goodbrand</p>
             </Link>
           </div>
 <div className="flex w-1/3 items-center gap-2 justify-center   ">

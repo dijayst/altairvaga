@@ -51,7 +51,7 @@ export default function Spinninglogo() {
 
       {/* Center logo */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-5xl font-serif text-white">AV</span>
+        <span className="text-5xl font-serif text-white">GB</span>
       </div>
     </div>
   </div>
